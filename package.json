@@ -7,6 +7,10 @@
 	"author": {
 		"name": "Paul Gordts"
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MetaP/vscode-configurable-generator"
+	},
 	"engines": {
 		"vscode": "^1.52.0"
 	},
