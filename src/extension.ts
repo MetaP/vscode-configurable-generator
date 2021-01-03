@@ -9,7 +9,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "configurable-generator" is now active!');
+	Output.logInfo('Extension "configurable-generator" activated.');
 
 	// Register the 'metap.generator' command.
 	let disposable = vscode.commands.registerCommand('metap.generate', (uri: vscode.Uri) => {
@@ -17,13 +17,13 @@ export function activate(context: vscode.ExtensionContext) {
 			const path = uri?.fsPath;
 			if (path)
 			{
-				Output.logInfo(`"Generate" started`);
+				Output.logInfo(`"Generate" started for "${path}".`);
 				const generator = new Generator();
 				generator.generate(path);
-				Output.logInfo(`"Generate" succeeded.`);
+				Output.logInfo(`"Generate" succeeded for "${path}".`);
 			}
 		} catch (error) {
-			Output.logError(`"Generate" failed: ${error.message}`);
+			Output.logError(`"Generate" failed with following error:`, error);
 		}
 	});
 
