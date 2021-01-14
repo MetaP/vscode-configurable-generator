@@ -26,3 +26,7 @@ Settings can be viewed and updated via the settings view [Menu: File |] Preferen
 ### 0.1.0
 
 Initial bèta release.
+
+### 0.1.3
+
+Custom icon (draft).

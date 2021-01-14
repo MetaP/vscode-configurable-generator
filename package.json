@@ -3,10 +3,11 @@
 	"name": "configurable-generator",
 	"displayName": "Configurable Generator",
 	"description": "Start a configured generator from the context menu of an XML file",
-	"version": "0.1.0",
+	"version": "0.1.3",
 	"author": {
 		"name": "Paul Gordts"
 	},
+	"icon": "resources/MetaP.1.ico",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/MetaP/vscode-configurable-generator"
